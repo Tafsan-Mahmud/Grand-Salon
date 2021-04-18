@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+#my-login section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+#my-login section .imgBx::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(225deg , #4b0c21,#023f5c);
+    z-index: 1;
+    mix-blend-mode: screen;
+}
+#my-login section .imgBx{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+#my-login section .imgBx img{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#my-login section .contentBx{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+#my-login section .contentBx .fromBx{
+    width: 50%;
+}
+#my-login section .contentBx .fromBx h2{
+    color: #607d8b;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-bottom:  4px solid #ff4584;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+#my-login section .contentBx .fromBx .inputBx{
+    margin-bottom: 10px;
+}
+#my-login section .contentBx .fromBx .inputBx span{
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: #607d8b;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+#my-login section .contentBx .fromBx .inputBx input{
+    width: 100%;
+    padding: 5px 15px ;
+    outline: none;
+    font-weight:400;
+    border: 1px solid #607d8b;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #607d8b;
+    background: transparent;
+    border-radius: 30px;
+
+}
+#my-login section .contentBx .fromBx .inputBx input[type="submit"]{
+    background: #ff4584;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgb(185, 185, 185);
+}
+#my-login section .contentBx .fromBx .inputBx input[type="submit"]:hover{
+    background: #e23871;
+    box-shadow: 0 0 13px rgb(185, 185, 185);
+}
+#my-login section .contentBx .fromBx .remember{
+    margin-bottom: 10px;
+    color: #607d8b;
+    font-weight: 400;
+    font-size: 15px;
+}
+#my-login section .contentBx .fromBx .inputBx p{
+    color: #607d8b;
+}
+#my-login section .contentBx .fromBx .inputBx p a {
+    color: #ff4584;
+}
+
+#my-login section .contentBx .fromBx  h3{
+    color: #607d8b;
+    text-align: center;
+    margin: 80px 0 10px;
+    font-weight: 500px;
+}
+#my-login section .contentBx .fromBx .sci{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#my-login section .contentBx .fromBx .sci li{
+    list-style: none;
+    width: 40px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    margin: 0 7px;
+    cursor: pointer;
+    
+}
+
+#my-login section .contentBx .fromBx .sci li img{
+    transform: scale(0.5);
+    
+}
+#my-login section .contentBx .fromBx .sci img{
+    width: 60px;
+}
+
+#my-login .btn-sign{
+    background: none;
+    outline: none;
+    border: none;
+    color: #ff4584;
+    height: 23px;
+}
+#my-login .btn-sign:hover{
+    border-bottom: 2px solid #ff4584;
+}
+
+@media(max-width: 768px){
+    #my-login section .imgBx{
+        position:absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    #my-login  section .contentBx {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    #my-login  section .contentBx .fromBx{
+        width: 100%;
+        padding: 40px;
+        background: rgba(255, 255, 255, 0.781);
+        margin: 50px;
+        border-radius: 15px;
+    }
+    #my-login  section .contentBx .fromBx h3 {
+        color: #607d8b;
+        text-align: center;
+        margin: 30px 0 10px;
+        font-weight: 500px;
+    }
+
+}

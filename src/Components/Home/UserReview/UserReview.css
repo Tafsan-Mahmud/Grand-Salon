@@ -1,0 +1,19 @@
+.review-rateing{
+    background: #131212;
+}
+.center-d{
+    display: flex;
+    justify-content: center !important;
+}
+.grid-review{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+}
+
+
+@media screen and (max-width: 650px ){
+    .grid-review{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

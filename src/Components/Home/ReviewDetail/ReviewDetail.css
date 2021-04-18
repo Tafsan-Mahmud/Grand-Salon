@@ -1,0 +1,20 @@
+.review-img{
+    border-radius: 50%;
+}
+
+
+.my-card{
+    margin: 20px !important;
+    box-shadow: 0 0 7px #bc935593;
+    /* height: 18rem; */
+    padding: 17px; 
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.my-card:hover{
+    transform: scale(1.06);
+    box-shadow:0 0 20px #bc9355c0;
+}
+.star{
+    color: gold;
+}

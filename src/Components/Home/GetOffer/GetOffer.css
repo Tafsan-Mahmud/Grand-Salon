@@ -1,0 +1,29 @@
+.get-offre-img{
+    width: 130px;
+    border: 2px solid #bc9355 ;
+}
+.offerBg{
+    background: url(the-company-barber-shop-2.jpg) fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 8%;
+    margin-top: 0;
+}
+.bg-text-or-img{
+    margin: 10px;
+    padding: 10px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background: #000000cc;
+    border-radius: 3px;
+}
+.positioning1{
+    left: 90px;
+     top: 0;
+     position:relative;
+}
+.positioning2{
+    left: 75px;
+    top: 94px;
+    position:relative;
+}

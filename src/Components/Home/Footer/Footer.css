@@ -1,0 +1,51 @@
+.social-icons img {
+    width: 40px;
+}
+.social-icons li{
+    list-style: none;
+    margin-right: 15px;
+}
+.social-icons{
+    position: relative;
+    right: 30px;
+    margin-top: 20px;
+    
+}
+.social-icons img{
+    transition: 0.2s ease-in-out;
+}
+.social-icons img:hover{
+    transform: translateY(-10px);
+}
+.footer-part{
+    padding-top: 100px;
+    padding-bottom: 70px;
+    background: #191919;
+}
+.all-text h6{
+    color:#9c9c9c;
+    font-weight: 500;
+}
+.all-text h4{
+    color: #cc9c54;
+    font-weight: 700;
+}
+.call-now{
+    margin-top: 50px;
+}
+.for-bg p{
+    text-align: center;
+    margin-top: 80px;
+    color: rgb(197, 197, 197);
+    letter-spacing: 1px;
+    font-size: 18px;
+    transition: 0.3s ease-in-out;
+}
+.for-bg p:hover{
+    cursor: pointer;
+    transform: translateY(-3px);
+}
+.all-text h6:hover{
+   color: #f5f5f5ef;
+   cursor: pointer;
+}

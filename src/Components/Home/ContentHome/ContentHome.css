@@ -1,0 +1,30 @@
+.text-home h1{
+    color: white;
+    font-size: 50px;
+}
+.text-home h6{
+    color: rgb(226, 226, 226);
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+.img-home img{
+    margin: 20px;
+    border-radius: 10px;
+}
+.btn-color-home{
+    background: #cc9f5c;
+    border: none;
+    border-radius: 2px;
+    color: rgb(22, 22, 22);
+    font-weight: 500;
+    transition: 0.1s ease-in-out;
+}
+.btn-color-home:hover{
+    background: #0a0a0a;
+    border: none;
+    color: #ececec;
+    font-weight: 500;
+    transform: translateY(-3px);
+   
+}
+
