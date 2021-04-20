@@ -14,4 +14,4 @@ const ProcessPayment = ({bookingData}) => {
     );
 };
 
-export default ProcessPayment;
+export default ProcessPayment;  

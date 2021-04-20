@@ -13,7 +13,7 @@ const Booking = () => {
     const bookingData = {...logedInUser , serviceName:name , serviceImg:imageUrl , description , price}
     const { id } = useParams()
     useEffect(() => {
-        fetch(`http://localhost:5000/service/${id}`)
+        fetch(` https://quiet-stream-56783.herokuapp.com/service/${id}`)
             .then(res => res.json())
             .then(data => {
                 setUniqeService(data)

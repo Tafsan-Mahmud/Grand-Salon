@@ -8,8 +8,7 @@
 .social-icons{
     position: relative;
     right: 30px;
-    margin-top: 20px;
-    
+    margin-top: 20px;  
 }
 .social-icons img{
     transition: 0.2s ease-in-out;

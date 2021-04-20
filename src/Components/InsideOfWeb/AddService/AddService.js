@@ -31,14 +31,14 @@ const AddService = () => {
             imageUrl: imageURL
         };
         console.log(eventData)
-        const url = `http://localhost:5000/addService`;
+        const url = ` https://quiet-stream-56783.herokuapp.com/addService`;
         fetch(url, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(eventData)
         })
             .then(res => {
-                alert("Product data uploaded")
+                alert("Service data uploaded")
             })
     };
     return (

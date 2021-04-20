@@ -1,0 +1,31 @@
+
+.review-upimg input[type="file"]{
+    display: none;
+}
+
+.review-upimg label{
+        color: #71BA58;
+        height: 39px;
+        width: 185px;
+        padding: 6px;
+        border: 2px solid #71BA58;
+        background-color: #dcffeced;
+        font-size: 17px;
+        display: flex;
+        border-radius: 5px;
+        cursor: pointer;
+}
+.review-upimg input{
+    margin-top: 5px;
+}
+
+.review-upimg h6{
+    margin-top: 20px;
+}
+
+.review-upimg {
+    padding: 20px;
+    border-radius: 10px;
+    background: #09121B;
+    padding-bottom: 30px;
+}

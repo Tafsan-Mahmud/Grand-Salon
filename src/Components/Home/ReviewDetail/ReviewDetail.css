@@ -4,9 +4,8 @@
 
 
 .my-card{
-    margin: 20px !important;
+    margin: 20px ;
     box-shadow: 0 0 7px #bc935593;
-    /* height: 18rem; */
     padding: 17px; 
     border-radius: 5px;
     transition: 0.3s;
@@ -17,4 +16,10 @@
 }
 .star{
     color: gold;
+}
+
+@media screen and (max-width: 730px ){
+   .mgn{
+       grid-gap: 20px;
+   }
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './UserReview.css';
 import pic1 from './user1.jpg';
 import pic2 from './user2.png';
@@ -7,45 +7,16 @@ import pic4 from './user4.jpg';
 import ReviewDetail from '../ReviewDetail/ReviewDetail';
 
 const UserReview = () => {
-    const lorem = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nisi quos iure quas veniam. Dolorem.'
-    const reviewData = [
-        {
-            name: 'Winson Herry',
-            description: lorem,
-            img: pic1,
-            address: 'Bangladesh'
-        },
-        {
-            name: 'Liba Mesbah',
-            description: lorem,
-            img: pic2,
-            address: 'London'
-        },
-        {
-            name: 'Burakh Mahaddi',
-            description: lorem,
-            img: pic3,
-            address: 'California'
-        },
-        {
-            name: 'Burakh Mahaddi',
-            description: lorem,
-            img: pic3,
-            address: 'California'
-        },
-        {
-            name: 'Burakh Mahaddi',
-            description: lorem,
-            img: pic3,
-            address: 'California'
-        },
-        {
-            name: 'Burakh Mahaddi',
-            description: lorem,
-            img: pic3,
-            address: 'California'
-        }
-    ]
+
+    const [reviewData, setReviewData] = useState([]);
+    useEffect(() => {
+        fetch(' https://quiet-stream-56783.herokuapp.com/getReviewData')
+            .then(res => res.json())
+            .then(data => {
+                setReviewData(data)
+            })
+    }, []);
+
     return (
 
         <section className="review-rateing pt-5  pb-5">

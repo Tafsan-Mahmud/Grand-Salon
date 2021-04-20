@@ -1,0 +1,30 @@
+.bookinglist-img{
+    width: 70px;
+    height: 70px;
+    padding: 5px;
+    border: 2px solid #aa884a;
+   
+}
+
+
+
+.bookinglist-card{
+    padding: 20px;
+    margin: 20px;
+    background: #09121B;
+    border-radius: 20px;
+    transition: 0.2s ease-in-out;
+}
+.bookinglist-card:hover{
+    transform: translateY(-13px);
+}
+.status-btn{
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    background: #dc8d8d;
+    color: #b30000;
+    padding: 5px;
+    width: 100px;
+    height: 40px;
+}

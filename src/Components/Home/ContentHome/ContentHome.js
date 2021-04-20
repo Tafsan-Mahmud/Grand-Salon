@@ -17,8 +17,8 @@ const ContentHome = () => {
                 <button className="btn   btn-color-home btn-animetion">MAKE AN APPOINTMENT</button>
             </div>
             <div className="col-md-4 img-home offset-md-1">
-                <img src={chair1} alt="" className="img-fluid w-75" />
-                <img src={tools} alt="" className="img-fluid w-75" />
+                <img src={chair1} alt="" className="img-fluid img-content-header " />
+                <img src={tools} alt="" className="img-fluid img-content-header" />
             </div>
         </main>
     );

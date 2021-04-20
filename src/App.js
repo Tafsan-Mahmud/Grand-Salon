@@ -2,9 +2,13 @@ import React, { createContext, useState } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import './App.css';
 import MainHome from "./Components/Home/MainHome/MainHome";
+import AddAdmin from "./Components/InsideOfWeb/AddAdmin/AddAdmin";
+import AddReview from "./Components/InsideOfWeb/AddReview/AddReview";
 import AddService from "./Components/InsideOfWeb/AddService/AddService";
 import Booking from "./Components/InsideOfWeb/Booking/Booking";
+import BookingList from "./Components/InsideOfWeb/BookingList/BookingList";
 import Dashboard from "./Components/InsideOfWeb/Dashboard/Dashboard";
+import OrderList from "./Components/InsideOfWeb/OrderList/OrderList";
 import PlaceOrder from "./Components/InsideOfWeb/PlaceOrder/PlaceOrder";
 import Login from "./Components/Login/Login";
 import PrivetRoute from "./Components/PrivetRoute/PrivetRoute";
@@ -33,12 +37,24 @@ function App() {
         <Route path="/dashboard">
           <Dashboard></Dashboard>
         </Route>
-        <Route path="/addServices">
+        <PrivetRoute path="/addServices">
           <AddService></AddService>
+        </PrivetRoute>
+        <Route path="/addreview">
+          <AddReview></AddReview>
         </Route>
         <PrivetRoute path="/booking/:id">
           <Booking></Booking>
         </PrivetRoute>
+        <Route path="/bookinglist">
+          <BookingList></BookingList>
+        </Route>
+        <Route path="/makeAdmin">
+          <AddAdmin></AddAdmin>
+        </Route>
+        <Route path="/orderList">
+          <OrderList></OrderList>
+        </Route>
       </Switch>
     </Router>
     </UserContex.Provider>

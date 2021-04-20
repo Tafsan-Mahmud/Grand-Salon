@@ -2,11 +2,7 @@ import React, { useState } from 'react';
 import { CardElement, useStripe, useElements } from '@stripe/react-stripe-js';
 
 
-
 const PaymentMathod = ({ bookingData }) => {
-    const [paymentId, setPaymentId] = useState({});
-    const singleBookingData = {...bookingData ,paymentId:paymentId }
-    console.log(singleBookingData);
     const stripe = useStripe();
     const elements = useElements();
 
@@ -25,17 +21,19 @@ const PaymentMathod = ({ bookingData }) => {
         if (error) {
             console.log('[error]', error);
         } else {
-            setPaymentId(paymentMethod)
+            handlePaymentProccessing(paymentMethod.id);
             console.log('[PaymentMethod]', paymentMethod);
         }
     };
 
-    const handlePaymentProccessing = () => {
 
-        fetch('http://localhost:5000/addbooking', {
+    const {isSignIn, name, email, photo, serviceName, serviceImg, description, price} = bookingData;
+    const status = "Pending";
+    const handlePaymentProccessing = (id) => {
+        fetch(' https://quiet-stream-56783.herokuapp.com/addbooking', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(singleBookingData)
+            body: JSON.stringify({isSignIn, name, email, photo, price, serviceName, serviceImg, description, paymentId:id , status})
         })
             .then(res => res.json())
             .then(data => {
@@ -50,10 +48,10 @@ const PaymentMathod = ({ bookingData }) => {
     return (
         <form onSubmit={handleSubmit}>
             <CardElement />
-            <button onClick={handlePaymentProccessing} className="payment-btn" type="submit" disabled={!stripe}>
+            <button className="payment-btn" type="submit" disabled={!stripe}>
                 Pay
       </button>
         </form>
     );
 };
-export default PaymentMathod; 
+export default PaymentMathod;

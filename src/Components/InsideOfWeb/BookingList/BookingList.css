@@ -1,0 +1,12 @@
+.grid-for-bookingDetails{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+
+@media(max-width: 768px){
+    .grid-for-bookingDetails{
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+}

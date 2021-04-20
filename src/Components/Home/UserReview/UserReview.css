@@ -7,12 +7,13 @@
 }
 .grid-review{
     display: grid;
-    grid-template-columns: repeat(3 , 1fr);
+    grid-template-columns: repeat(1, 1fr);
 }
 
 
-@media screen and (max-width: 650px ){
+@media screen and (max-width: 730px ){
     .grid-review{
+        justify-content: center;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
