@@ -27,15 +27,16 @@
     top: 94px;
     position:relative;
 }
-/* @media screen and (min-width: 550px ){
-    .positioning1 {
-        left: 57px;
-        top: 10px;
-        position: relative;
-    }
+@media screen and (max-width: 730px ){
+    
     .positioning2 {
-        left: 120px;
+        left: 75px;
         top: 10px;
         position: relative;
     }
-} */
+    .positioning1 {
+        left: 60px;
+        top: 10px;
+        position: relative;
+    }
+}

@@ -18,7 +18,7 @@
 .bookinglist-card:hover{
     transform: translateY(-13px);
 }
-.status-btn{
+.status-btn-edit{
     border-radius: 2px;
     border: none;
     outline: none;

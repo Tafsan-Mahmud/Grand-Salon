@@ -23,7 +23,7 @@ const ManageServiceDetail = (props) => {
             <div className="bookinglist-card">
                 <div className="d-flex img-and-status justify-content-between">
                     <img className="bookinglist-img" src={imageUrl} alt="" />
-                    <Button className="status-btn"  onClick={() => handleServiceDelete(_id)} variant="contained" style={{backgroundColor:'#b50023e3' , color:'#ffff'}}>Delete</Button>
+                    <Button className="status-btn-edit"  onClick={() => handleServiceDelete(_id)} variant="contained" style={{backgroundColor:'#b50023e3' , color:'#ffff'}}>Delete</Button>
                 </div>
                 <div className="name-description-price pt-3">
                     <h5 style={{ color: '#e6e4e4' }}>{name}</h5>

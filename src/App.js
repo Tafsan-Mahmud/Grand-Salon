@@ -31,30 +31,30 @@ function App() {
         <Route path="/login">
           <Login></Login>
         </Route>
-        <Route path="/dashboard">
+        <PrivetRoute path="/dashboard">
           <Dashboard></Dashboard>
-        </Route>
+        </PrivetRoute>
         <PrivetRoute path="/addServices">
           <AddService></AddService>
         </PrivetRoute>
-        <Route path="/addreview">
+        <PrivetRoute path="/addreview">
           <AddReview></AddReview>
-        </Route>
+        </PrivetRoute>
         <PrivetRoute path="/booking/:id">
           <Booking></Booking>
         </PrivetRoute>
-        <Route path="/bookinglist">
+        <PrivetRoute path="/bookinglist">
           <BookingList></BookingList>
-        </Route>
-        <Route path="/makeAdmin">
+        </PrivetRoute>
+        <PrivetRoute path="/makeAdmin">
           <AddAdmin></AddAdmin>
-        </Route>
-        <Route path="/orderList">
+        </PrivetRoute>
+        <PrivetRoute path="/orderList">
           <OrderList></OrderList>
-        </Route>
-        <Route path="/manageService">
+        </PrivetRoute>
+        <PrivetRoute path="/manageService">
           <ManageServices></ManageServices>
-        </Route>
+        </PrivetRoute>
       </Switch>
     </Router>
     </UserContex.Provider>

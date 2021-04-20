@@ -6,7 +6,7 @@ import { faStar ,faStarHalf } from '@fortawesome/free-solid-svg-icons';
 const ReviewDetail = (props) => {
     const { name, imageUrl, description, CnameDesignation } = props.review
     return (
-        <div className="pb-3 mgn">
+        <div className="pb-3 ">
             <div className=" mt-2 d-flex justify-content-center my-card">
                 <div >
                     <div className="d-flex ">

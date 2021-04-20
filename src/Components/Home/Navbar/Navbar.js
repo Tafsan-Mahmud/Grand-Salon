@@ -17,10 +17,7 @@ const Navbar = () => {
                                 <Link class="nav-link   nav-font-clr active" aria-current="page" to="/home">Home</Link>
                             </li>
                             <li class="nav-item">
-                                <Link class="nav-link   nav-font-clr " to="/placeOrder">Place Order</Link>
-                            </li>
-                            <li class="nav-item">
-                                <Link class="nav-link   nav-font-clr" to="/addServices">Add Service</Link>
+                                <Link class="nav-link   nav-font-clr" to="/makeAdmin">Admin</Link>
                             </li>
                             <li class="nav-item">
                                 <Link class="nav-link   nav-font-clr" to="/dashboard">Dashboard</Link>

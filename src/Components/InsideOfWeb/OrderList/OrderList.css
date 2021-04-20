@@ -4,3 +4,15 @@
 .style-something{
     margin-top: 15px;
 }
+.status-btn-edit{
+    
+        border-radius: 2px;
+        border: none;
+        outline: none;
+        background: #2d5169;
+        color: #ffffff;
+        padding: 5px;
+        width: 100px;
+        height: 40px;
+    
+}

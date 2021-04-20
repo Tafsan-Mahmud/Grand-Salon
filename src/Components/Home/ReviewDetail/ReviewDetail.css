@@ -18,8 +18,3 @@
     color: gold;
 }
 
-@media screen and (max-width: 730px ){
-   .mgn{
-       grid-gap: 20px;
-   }
-}

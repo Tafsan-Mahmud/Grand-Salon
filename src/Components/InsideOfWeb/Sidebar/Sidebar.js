@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import './Sidebar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAnchor, faTasks, faPlus, faEdit, faHome } from '@fortawesome/free-solid-svg-icons';
+import { faAnchor, faTasks, faPlus, faEdit, faHome ,faUserAlt } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 import { UserContex } from '../../../App';
 
@@ -29,14 +29,14 @@ const Sidebar = () => {
                 { isAdmin && <div>
                     <Link class="nav-link home-path " to="/manageService"><h5 ><FontAwesomeIcon icon={faTasks} /> Manage Service</h5></Link>
 
-                    <Link class="nav-link home-path " to="/makeAdmin"><h5 ><FontAwesomeIcon icon={faTasks} /> Make Admin </h5></Link>
+                    <Link class="nav-link home-path " to="/makeAdmin"><h5 ><FontAwesomeIcon icon={faUserAlt} /> Make Admin </h5></Link>
 
                     <Link class="nav-link home-path " to="/addServices"><h5 ><FontAwesomeIcon icon={faPlus} /> Add Service</h5></Link>
 
-                    <Link class="nav-link home-path " to="/orderList"><h5 ><FontAwesomeIcon icon={faPlus} />Order List</h5></Link>
+                    <Link class="nav-link home-path " to="/orderList"><h5 ><FontAwesomeIcon icon={faTasks} /> Total Order List</h5></Link>
                 </div>}
 
-                <Link class="nav-link home-path " to="/bookinglist"><h5 ><FontAwesomeIcon icon={faEdit} /> Booking List</h5></Link>
+                <Link class="nav-link home-path " to="/bookinglist"><h5 ><FontAwesomeIcon icon={faTasks} /> Booking List</h5></Link>
 
                 <Link class="nav-link home-path " to="/addreview"><h5 ><FontAwesomeIcon icon={faEdit} /> Review</h5></Link>
             </div>

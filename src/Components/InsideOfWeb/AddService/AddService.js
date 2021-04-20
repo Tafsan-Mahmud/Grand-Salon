@@ -31,7 +31,7 @@ const AddService = () => {
             description: data.description,
             imageUrl: imageURL
         };
-        const url = ` https://quiet-stream-56783.herokuapp.com/addService`;
+        const url = `https://quiet-stream-56783.herokuapp.com/addService`;
         fetch(url, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
