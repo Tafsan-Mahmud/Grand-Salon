@@ -78,7 +78,7 @@
 
 }
 #my-login section .contentBx .fromBx .inputBx input[type="submit"]{
-    background: #ff4584;
+    background: #6145ff;
     color: #fff;
     outline: none;
     border: none;
@@ -87,7 +87,7 @@
     box-shadow: 0 0 5px rgb(185, 185, 185);
 }
 #my-login section .contentBx .fromBx .inputBx input[type="submit"]:hover{
-    background: #e23871;
+    background: #4a30db;
     box-shadow: 0 0 13px rgb(185, 185, 185);
 }
 #my-login section .contentBx .fromBx .remember{
