@@ -8,8 +8,8 @@ import AddService from "./Components/InsideOfWeb/AddService/AddService";
 import Booking from "./Components/InsideOfWeb/Booking/Booking";
 import BookingList from "./Components/InsideOfWeb/BookingList/BookingList";
 import Dashboard from "./Components/InsideOfWeb/Dashboard/Dashboard";
+import ManageServices from "./Components/InsideOfWeb/ManageServices/ManageServices";
 import OrderList from "./Components/InsideOfWeb/OrderList/OrderList";
-import PlaceOrder from "./Components/InsideOfWeb/PlaceOrder/PlaceOrder";
 import Login from "./Components/Login/Login";
 import PrivetRoute from "./Components/PrivetRoute/PrivetRoute";
 
@@ -31,9 +31,6 @@ function App() {
         <Route path="/login">
           <Login></Login>
         </Route>
-        <PrivetRoute path="/placeOrder">
-          <PlaceOrder></PlaceOrder>
-        </PrivetRoute>
         <Route path="/dashboard">
           <Dashboard></Dashboard>
         </Route>
@@ -54,6 +51,9 @@ function App() {
         </Route>
         <Route path="/orderList">
           <OrderList></OrderList>
+        </Route>
+        <Route path="/manageService">
+          <ManageServices></ManageServices>
         </Route>
       </Switch>
     </Router>

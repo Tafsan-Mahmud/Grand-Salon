@@ -5,7 +5,7 @@ import './OrderList.css';
 const OrderList = () => {
     const [allBookinsData, setAllBookinsData] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/allBooking')
+        fetch('https://quiet-stream-56783.herokuapp.com/allBooking')
             .then(res => res.json())
             .then(data => {
                 setAllBookinsData(data);

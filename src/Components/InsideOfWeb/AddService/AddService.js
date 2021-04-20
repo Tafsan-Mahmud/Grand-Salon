@@ -11,6 +11,7 @@ const AddService = () => {
     const axios = require('axios').default;
     const [imageURL, setImageURL] = useState(null);
     const handleImgUpload = (event) => {
+        alert('please wait a minute for uploading photo otherwise your picture will not be seen in the service page ')
         const imageData = new FormData()
         imageData.set('key', '338a7d2633146965aa14730462081a12')
         imageData.append('image', event.target.files[0]);
@@ -30,7 +31,6 @@ const AddService = () => {
             description: data.description,
             imageUrl: imageURL
         };
-        console.log(eventData)
         const url = ` https://quiet-stream-56783.herokuapp.com/addService`;
         fetch(url, {
             method: 'POST',
@@ -61,7 +61,7 @@ const AddService = () => {
                                 <input className="form-control" name="description" ref={register} placeholder="type service description" required />
                                 <h6 style={{ color: '#d8d8d8' }}>choose a photo</h6>
                                 <input name="image_URL" id="file" required type="file" accept="image/*" onChange={handleImgUpload} />
-                                <label htmlFor="file"><FontAwesomeIcon icon={faCloudUploadAlt} /> Upload Photo</label>
+                                <label htmlFor="file"><FontAwesomeIcon icon={faCloudUploadAlt}  /> Upload Photo</label>
                             </div>
                             <input className="btn btn-color-home" type="submit" value="Save To Database" />
                         </form>

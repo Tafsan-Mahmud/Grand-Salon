@@ -7,10 +7,7 @@ import { UserContex } from '../../../App';
 
 const Sidebar = () => {
     const [logedInUser, setLogedInUser] = useContext(UserContex);
-    console.log(logedInUser);
     const [isAdmin, setIsAdmin] = useState(false);
-    console.log(isAdmin);
-
     useEffect(() => {
         fetch(' https://quiet-stream-56783.herokuapp.com/isAdmin', {
             method: 'POST',
@@ -30,7 +27,7 @@ const Sidebar = () => {
                 <Link class="nav-link home-path " to="/home"><h5 ><FontAwesomeIcon icon={faHome} /> Back to Home</h5></Link>
 
                 { isAdmin && <div>
-                    <Link class="nav-link home-path " to="/deletProduct"><h5 ><FontAwesomeIcon icon={faTasks} /> Manage Service</h5></Link>
+                    <Link class="nav-link home-path " to="/manageService"><h5 ><FontAwesomeIcon icon={faTasks} /> Manage Service</h5></Link>
 
                     <Link class="nav-link home-path " to="/makeAdmin"><h5 ><FontAwesomeIcon icon={faTasks} /> Make Admin </h5></Link>
 

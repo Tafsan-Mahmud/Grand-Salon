@@ -10,7 +10,7 @@ const Servicess = () => {
 
     const [serviceData, setServiceData] = useState([]);
     useEffect(() => {
-        fetch(' https://quiet-stream-56783.herokuapp.com/getServiceData')
+        fetch('https://quiet-stream-56783.herokuapp.com/getServiceData')
             .then(res => res.json())
             .then(data => {
                 setServiceData(data)
